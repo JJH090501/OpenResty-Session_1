@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.whole {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background-color: rgba(92, 77, 246, 1);
+    height: 100vh;
+    margin: 0;
+    width: 30%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-button {
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    color: rgba(92, 77, 246, 1);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px -1px rgba(0,0,0,25%);
+}
+.welcome {
+    font-size: 24px;
+
+}
+
+
+.logo {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#Vibin {
+    color: white;
+    font-size: 80px;
+    font-family: 'Aerial-Black';
+    margin-top: 0;
+
+}
+
+#vib {
+    font-weight: bold;
+}
+
+.guide > p {
+    font-size: 24px;
+}
+
+.login-main {
+    height: 100vh;
+    background-color: rgba(30, 30, 30, 100%);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.container1 {
+    position: absolute;
+    width: 30%;
+    top: 15%;
+    height: 40vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-title {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: rgba(92, 77, 246, 100%);
+    font-family: 'Aerial-Black';
+}
+
+.login-guide {
+    color: rgba(92, 77, 246, 100%);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-guide > p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.icon-placeholder {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid rgba(92, 77, 246, 100%);
+    border-radius: 16px;
+}
+
+.icon-placeholder i {
+    color: #888; /* 아이콘 색상 (어두운 회색) */
+    margin-right: 10px; /* 아이콘과 입력 텍스트 사이 간격 */
+    font-size: 1em; /* 아이콘 크기 (input 폰트 사이즈와 비슷하게) */
+}
+
+.icon-placeholder input {
+    flex-grow: 1; /* 남은 공간을 input이 모두 차지하도록 */
+    border: none; /* input 자체의 기본 테두리 제거 */
+    background-color: transparent; /* input 배경 투명하게 (부모의 배경색을 따름) */
+    color: #E0E0E0; /* 입력되는 텍스트 색상 */
+    font-size: 1em; /* 폰트 크기 */
+    outline: none; /* 포커스 시 기본 아웃라인 제거 (이미지처럼 깔끔하게) */
+    height: 24px; /* 입력 필드의 높이를 명시적으로 지정 (사진과 비슷하게) */
+}
+
+/* 플레이스홀더 텍스트 색상 */
+.icon-placeholder input::placeholder {
+    color: #888; /* 플레이스홀더 텍스트 색상 */
+}
+
+/* 포커스 시 테두리 색상 변경 (사진의 강조된 느낌) */
+.icon-placeholder:focus-within { /* input이 포커스 될 때 부모인 icon-placeholder의 스타일 변경 */
+    border-color: #6A0DAD; /* 더 진한 보라색 또는 강조할 색상 */
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.remember-me-group {
+    /*position: relative;*/
+    /*right: 180px;*/
+    /*margin: 10px;*/
+    /*color: #888;*/
+    display: flex;
+    align-items: center;
+    width: 100%; /* 부모 .login-form-container의 100% 너비를 사용 */
+    margin-top: 20px;
+    margin-bottom: 35px;
+    color: #BBBBBB;
+    font-size: 0.95em;
+    padding-left: 5px;
+}
+
+.remember-me-group input[type="checkbox"] {
+    display: none;
+}
+
+.remember-me-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* 마우스 오버 시 손가락 모양 커서 (클릭 가능함을 암시) */
+}
+
+.remember-me-group .custom-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.4em; /* 체크박스 사각형 크기 (이미지처럼 약간 크게) */
+    height: 1.4em;
+    margin-right: 8px; /* 체크박스와 텍스트 사이 간격 */
+    border-radius: 3px; /* 둥근 모서리 */
+    box-sizing: border-box;
+
+    /* 체크되지 않았을 때 보라색 테두리 */
+    border: 1px solid rgba(92, 77, 246, 1);
+    background-color: transparent; /* 배경 투명 */
+
+    transition: all 0.2s ease-in-out; /* 상태 변화 시 부드러운 전환 */
+}
+
+.remember-me-group .checkbox-check {
+    font-size: 1em; /* 체크 마크 크기 */
+    color: white; /* 체크 마크 흰색 */
+    opacity: 0; /* 기본적으로 숨김 */
+    transform: scale(0.5); /* 작게 시작 */
+    transition: all 0.2s ease-in-out;
+}
+
+/* 숨겨진 체크박스가 체크되었을 때 커스텀 체크박스 스타일 변경 */
+/* input:checked 상태일 때 바로 옆의 label을 찾고, 그 안의 custom-checkbox에 스타일 적용 */
+.remember-me-group input[type="checkbox"]:checked + label .custom-checkbox {
+    background-color: rgba(92, 77, 246, 1); /* 보라색 배경으로 채움 */
+    border-color: rgba(92, 77, 246, 1); /* 테두리도 보라색으로 */
+}
+
+/* 체크되었을 때 체크 마크 나타남 */
+.remember-me-group input[type="checkbox"]:checked + label .checkbox-check {
+    opacity: 1; /* 체크 마크 나타남 */
+    transform: scale(1); /* 원래 크기로 커지면서 나타남 */
+    color: white;
+}
+
+
+.login-button {
+    width: 80%; /* 부모 .login-form-container의 100% 너비를 사용 */
+    background-color: rgba(92, 77, 246, 1);
+    color: white;
+    border: none;
+    padding: 18px 30px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    left: 15%;
+}
+
+.login-button:hover {
+    background-color: rgba(92, 77, 246, 100%);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #fff;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+@font-face {
+    font-family: 'Aerial-Black';
+    font-style: normal;
+    font-weight: 400;
+    src:url(../fonts/arial_black.ttf) format('truetype');
+    src: url(../fonts/arial_black.ttf) format('truetype');
+}
